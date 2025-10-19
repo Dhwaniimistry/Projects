@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pet Simulator 🐾</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="title">Virtual Pet Simulator 🐾</h1>
+        
+        <div class="pet-container">
+            <div class="pet" id="pet">🐶</div>
+        </div>
+        
+        <div class="pet-status" id="petStatus">Your pet is happy! 😊</div>
+        
+        <div class="stats-container">
+            <div class="stat">
+                <div class="stat-label">
+                    <span>🍽️ Hunger</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill hunger-fill" id="hungerBar">
+                        <span id="hungerText">50%</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stat">
+                <div class="stat-label">
+                    <span>😊 Happiness</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill happiness-fill" id="happinessBar">
+                        <span id="happinessText">80%</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stat">
+                <div class="stat-label">
+                    <span>⚡ Energy</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill energy-fill" id="energyBar">
+                        <span id="energyText">70%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button class="control-btn feed-btn" onclick="feedPet()">🍖 Feed</button>
+            <button class="control-btn play-btn" onclick="playWithPet()">🎾 Play</button>
+            <button class="control-btn sleep-btn" onclick="petSleep()">💤 Sleep</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
