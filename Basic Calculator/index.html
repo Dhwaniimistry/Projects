@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cute Pastel Calculator 🌸</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 🌸 Floating Flowers -->
+<div class="flowers-container">
+  <span class="flower">🌸</span>
+  <span class="flower">💮</span>
+  <span class="flower">🌺</span>
+  <span class="flower">🌼</span>
+  <span class="flower">🌸</span>
+  <span class="flower">🌺</span>
+  <span class="flower">💮</span>
+  <span class="flower">🌼</span>
+</div>
+
+    <div class="calculator-container">
+        <!-- Theme selector -->
+        <div class="theme-selector">
+            <button class="theme-btn active" data-theme="pink" title="Cherry Blossom">🌸</button>
+            <button class="theme-btn" data-theme="purple" title="Lavender Dreams">💜</button>
+            <button class="theme-btn" data-theme="blue" title="Sky Blue">💙</button>
+            <button class="theme-btn" data-theme="green" title="Mint Fresh">💚</button>
+        </div>
+
+        <div class="calculator-card">
+            <!-- Header -->
+            <div class="calculator-header">
+                <h1 class="calculator-title">Calculator🌸</h1>
+                <button class="history-toggle" id="historyToggle" title="Show History">
+                    📋
+                </button>
+            </div>
+
+            <!-- Display -->
+            <div class="display-container">
+                <div class="expression-display" id="expressionDisplay">0</div>
+                <div class="result-display" id="resultDisplay">0</div>
+            </div>
+
+            <!-- Button Grid -->
+            <div class="button-grid">
+                <button class="btn btn-clear" data-action="clear">C</button>
+                <button class="btn btn-operator" data-action="backspace">⌫</button>
+                <button class="btn btn-operator" data-action="/">/</button>
+                <button class="btn btn-operator" data-action="*">×</button>
+                
+                <button class="btn btn-number" data-number="7">7</button>
+                <button class="btn btn-number" data-number="8">8</button>
+                <button class="btn btn-number" data-number="9">9</button>
+                <button class="btn btn-operator" data-action="-">-</button>
+                
+                <button class="btn btn-number" data-number="4">4</button>
+                <button class="btn btn-number" data-number="5">5</button>
+                <button class="btn btn-number" data-number="6">6</button>
+                <button class="btn btn-operator" data-action="+">+</button>
+                
+                <button class="btn btn-number" data-number="1">1</button>
+                <button class="btn btn-number" data-number="2">2</button>
+                <button class="btn btn-number" data-number="3">3</button>
+                <button class="btn btn-equals" data-action="=" rowspan="2">=</button>
+                
+                <button class="btn btn-number btn-zero" data-number="0">0</button>
+                <button class="btn btn-number" data-number=".">.</button>
+                <button class="btn btn-operator" data-action="±">±</button>
+            </div>
+        </div>
+
+        <!-- History Panel -->
+        <div class="history-panel" id="historyPanel">
+            <div class="history-header">
+                <h3>History 📝</h3>
+                <button class="clear-history" id="clearHistory">Clear All</button>
+            </div>
+            <div class="history-content" id="historyContent">
+                <div class="empty-history">No calculations yet! 🌸</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

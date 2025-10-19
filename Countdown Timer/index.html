@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Countdown Timer</h1>
+        
+        <div class="input-section">
+            <form id="countdown-form">
+                <div class="form-group">
+                    <label for="target-date">Select Target Date & Time:</label>
+                    <input type="datetime-local" id="target-date" required>
+                </div>
+                <button type="submit" class="btn" id="start-btn">
+                    <span>Start Countdown</span>
+                </button>
+            </form>
+        </div>
+
+        <div class="timer-display" id="timer-display" style="display: none;">
+            <div class="time-grid">
+                <div class="time-unit">
+                    <span class="time-value" id="days">00</span>
+                    <span class="time-label">Days</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-value" id="hours">00</span>
+                    <span class="time-label">Hours</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-value" id="minutes">00</span>
+                    <span class="time-label">Minutes</span>
+                </div>
+                <div class="time-unit">
+                    <span class="time-value" id="seconds">00</span>
+                    <span class="time-label">Seconds</span>
+                </div>
+            </div>
+            
+            <button class="btn reset-btn" id="reset-btn">
+                <span>Reset Timer</span>
+            </button>
+        </div>
+
+        <div class="finished-message" id="finished-message" style="display: none;">
+            <h2>🎉 Countdown Finished! 🎉</h2>
+            <p>The time has arrived!</p>
+            <button class="btn" id="new-countdown-btn">
+                <span>Start New Countdown</span>
+            </button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
